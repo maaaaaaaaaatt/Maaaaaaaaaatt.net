@@ -15,6 +15,7 @@ body {
     color: black;
     overflow: hidden;
 
+
 }
 
 
@@ -22,16 +23,21 @@ body {
     width: 40vw;
     height: auto;
     background-color: ghostwhite;
-    border-style: solid;
+    border-style: none;
     border-width: 2px;
     border-color: black;
-    text-align: center;
+    text-align: left;
     justify-content: center;
 }
 
 
 ul {
     list-style: none;
+
+}
+
+p {
+    text-decoration: underline;
 
 }
 
@@ -44,271 +50,329 @@ ul {
 #dv1,
 #dv2 {
     display: inline-block;
-    width: 45%;
-    margin: 2px;
-    padding: 10px;
+    width: auto;
+    margin: 1px;
+    padding: 15px;
     background: ghostwhite;
     justify-content: center;
-   
+    text-align: left;
+
 }
 
-.header{
+.header {
     width: 100vw;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 5px;
     font-size: 3em;
     height: auto;
     margin: 4px;
     padding: 3px;
     color: white;
-    
+
 }
 
 a {
     color: white;
-    
+
 }
 
-a:hover{
+a:hover {
     background-color: yellow;
     color: red;
-    
+
 }
 
 a.list {
-    color:black;
+    color: black;
     text-decoration: none;
-    
+
 }
 
-a.list:hover{
+a.list:hover {
     background-color: yellow;
     color: red;
-    
-    
+
+
 }
 
-.in1:hover:before{
+.in1:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url("in_1.jpg");
+    background-image: url(/images/in_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.in2:hover:before{
+.in2:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(in_2.jpg);
+    background-image: url(/images/in_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   
+
 }
 
-.in3:hover:before{
+.in3:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(in_3.jpg);
-       background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.in4:hover:before{
-    content: '';
-    position: fixed;
-    display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
-    z-index: -1;
-    background-image: url(in_4.jpg);
+    background-image: url(/images/in_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.in5:hover:before{
+.in4:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(in_5.jpg);
+    background-image: url(/images/in_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.in6:hover:before{
+.in5:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(in_6.jpg);
+    background-image: url(/images/in_5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.in7:hover:before{
+.in6:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(in_7.jpg);
+    background-image: url(/images/in_6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.in8:hover:before{
+.in7:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(in_8.jpg);
+    background-image: url(/images/in_7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.in9:hover:before{
+.in8:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(in_9.jpg);
+    background-image: url(/images/in_8.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.in10:hover:before{
+.in9:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(in_10.jpg);
+    background-image: url(/images/in_9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.out1:hover:before{
+.in10:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(https://66.media.tumblr.com/b7345e556030d3b43b4438f225985dd6/434753c6d55d1f06-5c/s1280x1920/e8d8a01ae786b41445c7a18670749eb6928e3b50.jpg);
+    background-image: url(/images/in_10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.out2:hover:before{
+.out1:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(https://66.media.tumblr.com/c583336d251d77c6055c7301d8d96b34/96205f0deab9ebd2-57/s1280x1920/b0b8681b289025321b09e70ac2fedce1b385f92c.jpg);
+    background-image: url(/images/out_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.out3:hover:before{
+.out2:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(https://66.media.tumblr.com/b7345e556030d3b43b4438f225985dd6/434753c6d55d1f06-5c/s1280x1920/e8d8a01ae786b41445c7a18670749eb6928e3b50.jpg);
+    background-image: url(/images/out_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.out4:hover:before{
+.out3:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(https://66.media.tumblr.com/b7345e556030d3b43b4438f225985dd6/434753c6d55d1f06-5c/s1280x1920/e8d8a01ae786b41445c7a18670749eb6928e3b50.jpg);
+    background-image: url(/images/out_3.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.out5:hover:before{
+.out4:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(https://66.media.tumblr.com/b7345e556030d3b43b4438f225985dd6/434753c6d55d1f06-5c/s1280x1920/e8d8a01ae786b41445c7a18670749eb6928e3b50.jpg);
+    background-image: url(/images/out_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.out6:hover:before{
+.out5:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(https://66.media.tumblr.com/b7345e556030d3b43b4438f225985dd6/434753c6d55d1f06-5c/s1280x1920/e8d8a01ae786b41445c7a18670749eb6928e3b50.jpg);
+    background-image: url(/images/out_5.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.out7:hover:before{
+.out6:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(https://66.media.tumblr.com/b7345e556030d3b43b4438f225985dd6/434753c6d55d1f06-5c/s1280x1920/e8d8a01ae786b41445c7a18670749eb6928e3b50.jpg);
+    background-image: url(/images/out_6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.out8:hover:before{
+.out7:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(https://66.media.tumblr.com/b7345e556030d3b43b4438f225985dd6/434753c6d55d1f06-5c/s1280x1920/e8d8a01ae786b41445c7a18670749eb6928e3b50.jpg);
+    background-image: url(/images/out_7.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.out9:hover:before{
+.out8:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(https://66.media.tumblr.com/b7345e556030d3b43b4438f225985dd6/434753c6d55d1f06-5c/s1280x1920/e8d8a01ae786b41445c7a18670749eb6928e3b50.jpg);
+    background-image: url(/images/out_8.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.out10:hover:before{
+.out9:hover:before {
     content: '';
     position: fixed;
     display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
-    background-image: url(https://66.media.tumblr.com/b7345e556030d3b43b4438f225985dd6/434753c6d55d1f06-5c/s1280x1920/e8d8a01ae786b41445c7a18670749eb6928e3b50.jpg);
+    background-image: url(/images/out_9.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-
+.out10:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
