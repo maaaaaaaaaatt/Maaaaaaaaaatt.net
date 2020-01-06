@@ -106,7 +106,7 @@ a.list:hover{
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(/images/in_2.jpg);
+    background-image: url(in_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
    
