@@ -118,7 +118,7 @@ a.list:hover{
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(/images/in_3.jpg);
+    background-image: url(in_3.jpg);
        background-repeat: no-repeat;
     background-size: cover;
 }
@@ -129,7 +129,7 @@ a.list:hover{
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(/images/in_4.jpg);
+    background-image: url(in_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -140,7 +140,7 @@ a.list:hover{
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(/images/in_5.jpg);
+    background-image: url(in_5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -151,7 +151,7 @@ a.list:hover{
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(/images/in_6.jpg);
+    background-image: url(in_6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -162,7 +162,7 @@ a.list:hover{
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(/images/in_7.jpg);
+    background-image: url(in_7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -173,7 +173,7 @@ a.list:hover{
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(/images/in_8.jpg);
+    background-image: url(in_8.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -184,7 +184,7 @@ a.list:hover{
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(/images/in_9.jpg);
+    background-image: url(in_9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -195,7 +195,7 @@ a.list:hover{
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(/images/in_10.jpg);
+    background-image: url(in_10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
