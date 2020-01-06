@@ -246,7 +246,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(out_1.jpg);
+    background-image: url(/images/out_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -260,7 +260,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(out_2.jpg);
+    background-image: url(/images/out_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -274,7 +274,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(out_3.png);
+    background-image: url(/images/out_3.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -288,7 +288,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(out_4.jpg);
+    background-image: url(/images/out_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -302,7 +302,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(out_5.svg);
+    background-image: url(/images/out_5.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -316,7 +316,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(out_6.jpg);
+    background-image: url(/images/out_6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -330,7 +330,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(out_7.gif);
+    background-image: url(/images/out_7.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -344,7 +344,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(out_8.jpg);
+    background-image: url(/images/out_8.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -358,7 +358,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(out_9.gif);
+    background-image: url(/images/out_9.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -372,7 +372,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(out_10.jpg);
+    background-image: url(/images/out_10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
