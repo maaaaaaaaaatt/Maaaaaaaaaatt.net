@@ -372,7 +372,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(/images/out_10.jpg);
+    background-image: url(/images/in_10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
