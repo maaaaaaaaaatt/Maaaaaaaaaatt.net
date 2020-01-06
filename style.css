@@ -76,13 +76,26 @@ a:hover{
     
 }
 
+a.list {
+    color:black;
+    text-decoration: none;
+    
+}
+
+a.list:hover{
+    background-color: yellow;
+    color: red;
+    
+    
+}
+
 .in1:hover:before{
     content: '';
     position: fixed;
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(../images/in_1.jpg);
+    background-image: url(/images/in_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -93,7 +106,7 @@ a:hover{
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
-    background-image: url(../images/in_1.jpg);
+    background-image: url(/images/in_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
    
