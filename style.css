@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: -apple-system, system-ui, sans-serif;
+    font-family: 'Work Sans', system-ui, sans-serif;
     font-size: 16px;
     color: black;
     overflow: hidden;
@@ -71,6 +71,16 @@ p {
     color: white;
 
 }
+
+.footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    margin: 4px;
+    padding: 3px;
+    color: white;
+    text-align: right;
 
 a {
     color: white;
