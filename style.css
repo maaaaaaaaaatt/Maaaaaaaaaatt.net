@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    height: 100vh;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Work Sans', system-ui, sans-serif;
+    font-size: 16px;
+    color: black;
+    overflow: hidden;
+
+
+}
+
+
+.container {
+    width: 40vw;
+    height: auto;
+    background-color: ghostwhite;
+    border-style: none;
+    border-width: 2px;
+    border-color: black;
+    text-align: left;
+    justify-content: center;
+}
+
+
+ul {
+    list-style: none;
+
+}
+
+p {
+    text-decoration: underline;
+
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+#dv1,
+#dv2 {
+    display: inline-block;
+    width: auto;
+    margin: 1px;
+    padding: 15px;
+    background: ghostwhite;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 5px;
+    font-size: 3em;
+    height: auto;
+    margin: 4px;
+    padding: 3px;
+    color: white;
+
+}
+
+.footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    margin: 4px;
+    padding: 3px;
+    color: white;
+    text-align: right;
+    
+}
+
+a {
+    color: white;
+
+}
+
+a:hover {
+    background-color: yellow;
+    color: red;
+
+}
+
+a.list {
+    color: black;
+    text-decoration: none;
+
+}
+
+a.list:hover {
+    background-color: yellow;
+    color: red;
+
+
+}
+
+.in1:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/in_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.in2:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/in_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.in3:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/in_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.in4:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/in_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.in5:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/in_5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.in6:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/in_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.in7:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/in_7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.in8:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/in_8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.in9:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/in_9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.in10:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/in_10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.out1:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.out2:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.out3:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.out4:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.out5:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.out6:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.out7:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_7.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.out8:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.out9:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_9.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.out10:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/images/out_10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
