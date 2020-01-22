@@ -1,11 +1,11 @@
 * {
     padding: 0;
     margin: 0;
-
 }
 
 body {
     height: 100vh;
+    widows: 100vw;
     background-color: ghostwhite;
     display: flex;
     justify-content: center;
@@ -13,54 +13,11 @@ body {
     font-family: 'Work Sans', system-ui, sans-serif;
     font-size: 16px;
     color: black;
-    overflow: hidden;
-
-
-}
-
-
-.container {
-    width: 40vw;
-    height: auto;
-    background-color: ghostwhite;
-    border-style: none;
-    border-width: 2px;
-    border-color: black;
-    text-align: left;
-    justify-content: center;
-}
-
-
-ul {
-    list-style: none;
-
-}
-
-p {
-    text-decoration: underline;
-
-}
-
-
-.container {
-    position: relative;
-    text-align: center;
-}
-
-#dv1,
-#dv2 {
-    display: inline-block;
-    width: auto;
-    margin: 1px;
-    padding: 15px;
-    background: ghostwhite;
-    justify-content: center;
-    text-align: left;
-
+    overflow: scroll;
 }
 
 .header {
-    width: 100vw;
+    width: 95vw;
     position: fixed;
     top: 0;
     left: 5px;
@@ -69,7 +26,6 @@ p {
     margin: 4px;
     padding: 3px;
     color: white;
-
 }
 
 .footer {
@@ -81,8 +37,26 @@ p {
     padding: 3px;
     color: white;
     text-align: right;
-    
 }
+
+/*text styling*/
+
+ul {
+    list-style: none;
+}
+
+
+p {
+    text-decoration: underline;
+
+}
+
+p.design {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+}
+
 
 a {
     color: white;
@@ -104,9 +78,36 @@ a.list {
 a.list:hover {
     background-color: yellow;
     color: red;
-
-
 }
+
+/*center box controls */
+
+.container {
+    width: auto;
+    height: auto;
+    background-color: ghostwhite;
+    border-style: none;
+    border-width: 2px;
+    border-color: black;
+    text-align: left;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+}
+
+#dv1,
+#dv2 {
+    display: inline-block;
+    width: auto;
+    margin: 1px;
+    padding: 15px;
+    background: ghostwhite;
+    justify-content: center;
+    text-align: left;
+}
+
+/*center box links*/
+
 
 .in1:hover:before {
     content: '';
@@ -117,7 +118,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(/images/in_1.jpg);
+    background-image: url(/images/in_1.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -286,7 +287,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(/images/out_3.png);
+    background-image: url(/images/out_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -314,7 +315,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(/images/out_5.svg);
+    background-image: url(/images/out_5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -388,3 +389,4 @@ a.list:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
