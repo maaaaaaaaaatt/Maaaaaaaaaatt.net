@@ -1,38 +1,5 @@
 /*design page controls*/
 
-.images {
-    position: relative;
-    width: 100%;
-    padding-top: 3%;
-    padding-bottom: 5%;
-    display: contents;
-}
-
-.images img {
-    width: 46%;
-    float: left;
-    padding: 2%;
-}
-
-#bm img {
-    width: 15%;
-}
-
-.large img {
-    width: 95vw;
-}
-
-
-.video {
-	width: 95vw;
-    float: left;
-    padding: 2%;
-}
-
-.video video {
-	width: 100%;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -51,7 +18,7 @@ body {
     font-size: 3em;
     height: auto;
     margin: 4px;
-    padding: 3px;
+    padding: 25px;
     color: white;
 }
 
@@ -75,8 +42,98 @@ p.design {
 
 a {
     color: black;
-    
+
 }
+
 a:hover {
     background-color: yellow;
     color: red;
+    
+}
+
+/*main image containers*/
+
+.container {
+    position: relative;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    display: contents;
+}
+
+.image {
+    width: 46%;
+    float: left;
+    padding: 2%;
+}
+
+
+/*large images containers*/
+
+.large {
+   width:95vw;
+    float: left;
+}
+
+.largeimage {
+    width: 100%;
+    float: left;
+    padding: 2%;
+}
+
+
+/*video containers*/
+
+.video {
+    width: 95vw;
+    float: left;
+}
+
+.video video {
+    width: 100%;
+    float: left;
+    
+}
+
+.videohalf{
+    width: 46vw;
+    float:left;
+    padding: 2%;
+}
+
+.videohalf videohalf {
+     width: 100%;
+    float: left;
+    padding: 2%;
+}
+
+/*large image overlay controls*/
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+    float:inherit;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(0,0,0,0);
+}
+
+.large:hover .overlay {
+  opacity: 1;
+}
+
+
+.text {
+  color: black;
+    font-family: 'Work Sans', system-ui, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+
+}
