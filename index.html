@@ -102,8 +102,10 @@
 
 
             </ul>
-
+            
         </div>
+        <br><br>
+        <p class="asof">As of: <span id="datetime"></span></p>
     </div>
 
     <div class="footer">
@@ -117,7 +119,12 @@
 
 
 
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript">
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+
+    </script>
+
 </body>
 
 </html>
