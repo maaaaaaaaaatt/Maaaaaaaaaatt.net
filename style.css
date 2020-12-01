@@ -57,6 +57,11 @@ p.design {
     text-decoration: none;
 }
 
+p.asof{
+    text-align: center;
+    text-decoration: none;
+}
+
 
 a {
     color: white;
