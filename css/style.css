@@ -21,6 +21,7 @@ body {
 
 body.home {
     background-image: linear-gradient(rgb(12, 79, 193), rgb(12, 79, 193));
+    overflow: hidden;
 }
 
 section {
