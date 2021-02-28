@@ -1,0 +1,80 @@
+/*design page controls*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Work Sans', system-ui, sans-serif;
+    overflow: scroll;
+}
+
+.header {
+    width: 95vw;
+    position: static;
+    top: 0;
+    left: 5px;
+    font-size: 3em;
+    height: auto;
+    margin: 4px;
+    padding: 25px;
+    color: white;
+}
+
+.footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    margin: 4px;
+    padding: 3px;
+    color: white;
+    text-align: right;
+}
+
+
+p.design {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+
+}
+
+a:hover {
+    background-color: yellow;
+    color: red;
+    
+}
+
+/*main image containers*/
+
+.container {
+    position: relative;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    display: contents;
+}
+
+.image {
+    width: 46%;
+    float: left;
+    padding: 2%;
+}
+
+
+/*large images containers*/
+
+.large {
+   min-width:95vw;
+}
+
+.largeimage {
+    width: 95vw;
+    padding: 2%;
+}
