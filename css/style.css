@@ -16,7 +16,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Work Sans', system-ui, sans-serif;
-    font-size: 16px;
     color: black;
 }
 
@@ -37,7 +36,7 @@ section {
     position: fixed;
     top: 0;
     left: 5px;
-    font-size: 3em;
+    font-size: 50px;
     height: auto;
     margin: 4px;
     padding: 3px;
@@ -49,7 +48,7 @@ section {
     position: fixed;
     top: 0;
     left: 5px;
-    font-size: 3em;
+    font-size: 4em;
     height: auto;
     margin: 4px;
     padding: 3px;
