@@ -191,285 +191,286 @@ a.list:hover {
     .cloud2 {
         height: 60%;
     }
+}
 
-    /* hover links */
-    .in1:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/krazykat.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+/* hover links */
+.in1:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/krazykat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .in2:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/shaggy.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+.in2:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/shaggy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    }
+}
 
-    .in3:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/clown.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.in3:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/clown.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .in4:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/bird.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.in4:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/bird.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .in5:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/braves.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.in5:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/braves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .in6:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/jester.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.in6:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/jester.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .in7:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/shepard.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.in7:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/shepard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .in8:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/bruce.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.in8:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/bruce.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .in9:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/corbu.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.in9:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/corbu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .in10:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/soma.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.in10:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/soma.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .out1:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/longcons.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.out1:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/longcons.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .out2:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/longcounts.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.out2:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/longcounts.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .out3:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/butthead.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.out3:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/butthead.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .out4:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/kiss2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.out4:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/kiss2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .out5:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/deathvalley.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.out5:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/deathvalley.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .out6:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/dogfood.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.out6:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/dogfood.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .out7:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/rooney.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.out7:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/rooney.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .out8:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/dirt.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.out8:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/dirt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .out9:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/andy.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.out9:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/andy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .out10:hover:before {
-        content: '';
-        position: fixed;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-image: url(/img/currently/cartier.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.out10:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/cartier.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
