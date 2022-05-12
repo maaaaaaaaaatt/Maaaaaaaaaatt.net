@@ -60,9 +60,9 @@ section {
 .work_container {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     left: 5px;
-    top: 8vh;
+    top: 10vh;
     font-size: 1em;
     margin: 4px;
     padding: 3px;
@@ -77,9 +77,40 @@ section {
     position: absolute;
     width: 100%;
     margin-left: 10%;
-    display: block;
-
+    display: inline-block;
 }
+
+.content_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 5px;
+    top: 10vh;
+    font-size: 1em;
+    margin: 4px;
+    padding: 3px;
+    color: black;
+}
+
+.sidebar {
+    display: inline-block;
+    position: fixed;
+}
+
+
+.worklist {
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+.content {
+    position: relative;
+    width: 75%;
+    left: 25%;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
 
 .text {
     width: 100%;
@@ -95,9 +126,8 @@ section {
 
 .img,
 .video {
-    max-width: 75%;
+    max-width: 80%;
 }
-
 
 ul {
     list-style-type: disc;
