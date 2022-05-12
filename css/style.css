@@ -84,8 +84,7 @@ section {
     width: 100%;
     height: 100%;
     position: relative;
-    left: 5px;
-    top: 10vh;
+    top: 10%;
     font-size: 1em;
     margin: 4px;
     padding: 3px;
@@ -95,6 +94,8 @@ section {
 .sidebar {
     display: inline-block;
     position: fixed;
+    width: 25%;
+    margin-left: 10px;
 }
 
 
@@ -106,7 +107,7 @@ section {
 .content {
     position: relative;
     width: 75%;
-    left: 25%;
+    left: 30%;
     display: inline-block;
     margin-bottom: 50px;
 }
@@ -126,7 +127,7 @@ section {
 
 .img,
 .video {
-    max-width: 80%;
+    max-width: 75%;
 }
 
 ul {
