@@ -319,7 +319,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(/img/currently/shepard.png);
+    background-image: url(/img/currently/magazine.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -347,7 +347,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(/img/currently/corbu.png);
+    background-image: url(/img/currently/war.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -361,7 +361,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(/img/currently/soma.png);
+    background-image: url(/img/currently/eternity.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -431,7 +431,7 @@ a.list:hover {
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(/img/currently/deathvalley.png);
+    background-image: url(/img/currently/shepard.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -502,6 +502,63 @@ a.list:hover {
     right: 0;
     z-index: -1;
     background-image: url(/img/currently/cartier.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Listening Covers */
+.listening1:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/ccr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.listening2:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/goodone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.listening3:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/slime.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.listening4:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/currently/heaven.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
