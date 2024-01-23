@@ -100,8 +100,12 @@ section {
 
 
 .worklist {
-    list-style-type: none;
-    line-height: 1.75;
+    list-style-type: '→  ';
+    line-height: 2;
+}
+
+.worklist a {
+    text-decoration: none;
 }
 
 .content {
