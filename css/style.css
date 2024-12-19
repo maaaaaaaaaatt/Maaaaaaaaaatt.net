@@ -31,6 +31,7 @@ body {
 
 body.home {
     background-image: linear-gradient(rgb(12, 79, 193), rgb(12, 79, 193));
+    transition: background-image 1s ease-in-out;
     overflow: hidden;
 }
 

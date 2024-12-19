@@ -52,14 +52,47 @@
         and his <a class="home" href="https://matthew-flores.tumblr.com" target="_blank">blog</a>.
         <br>
         <br>
-        <p><a class="home" href='/work/mrwarmth.html'>Selected Work</a>
-            <br>
-            <a class="home" href='/currently.html'>Currently</a>
-            <br>
-            <a class="home" href='/interview.pdf'>Interview</a>
-            <br>
+        <p><a class="home" href='/work/mrwarmth.html'>Selected Work</a> | <a class="home" href='/currently.html'>Currently</a> | <a class="home" href='/interview.pdf'>Interview</a>
         </p>
     </div>
 </body>
+
+<script>
+   function updateGradientBackground() {
+      const body = document.body;
+
+      // Ensure the body has the "home" class
+      if (!body.classList.contains('home')) return;
+
+      const hour = new Date().getHours();
+      let gradient;
+
+      if (hour >= 6 && hour < 12) {
+        // Morning gradient
+        gradient = 'linear-gradient(to bottom, #FFD700, #FF8C00)';
+
+      } else if (hour >= 12 && hour < 18) {
+        // Afternoon gradient
+        gradient = 'linear-gradient(rgb(12, 79, 193), rgb(12, 79, 193))';
+
+      } else if (hour >= 18 && hour < 21) {
+        // Evening gradient
+        gradient = 'linear-gradient(to bottom, #FF4500, #2E8B57)';
+
+      } else {
+        // Night gradient
+        gradient = 'linear-gradient(to bottom, #191970, #000080)';
+      }
+
+      // Apply the gradient
+      body.style.backgroundImage = gradient;
+    }
+
+    // Run the function after the DOM has loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      updateGradientBackground();
+      setInterval(updateGradientBackground, 60 * 60 * 1000); // Update every hour
+    });
+</script>
 
 </html>
