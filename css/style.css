@@ -197,7 +197,7 @@ a.list:hover {
 .cloud1 {
     height: 75%;
     position: absolute;
-    animation: move1 100s infinite linear;
+    animation: move1 300s infinite linear;
     filter: opacity(0.9);
 }
 
@@ -205,7 +205,7 @@ a.list:hover {
     height: 60%;
     position: absolute;
     bottom: 0px;
-    animation: move2 100s infinite linear;
+    animation: move2 300s infinite linear;
     filter: opacity(0.82);
 }
 
