@@ -69,6 +69,17 @@ section {
 
 }
 
+/* Footer */
+
+.updatestatus{
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    color: white;
+}
+
+/* Work Pages */
+
 .work_container {
     width: 100%;
     height: 100%;
@@ -165,7 +176,7 @@ a.home {
 
 a:hover {
     background-color: yellow;
-    color: red;
+    color: black;
 
 }
 
@@ -177,7 +188,7 @@ a.list {
 
 a.list:hover {
     background-color: yellow;
-    color: red;
+    color: black;
 }
 
 /* cloud */
@@ -186,7 +197,7 @@ a.list:hover {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    opacity: 50%;
+    opacity: 100%;
 }
 
 .cloud {
