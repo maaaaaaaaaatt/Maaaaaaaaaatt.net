@@ -57,7 +57,7 @@
     </div>
 
     <div class="updatestatus">
-      <p>This space is currently being updated once a year. Last update on: 12-28-2024</p>
+      <p>This space is currently being updated once a year. <span id="timestamp"></span></p>
     </div>
 </body>
 
@@ -97,6 +97,12 @@
       updateGradientBackground();
       setInterval(updateGradientBackground, 60 * 60 * 1000); // Update every hour
     });
+
+    // Last Modified timestamp controls
+    const lastModified = new Date(document.lastModified);
+  const formattedDate = lastModified.toLocaleDateString(); // Format the date
+  const formattedTime = lastModified.toLocaleTimeString(); // Format the time
+  document.getElementById("timestamp").innerHTML = `Last modified on ${formattedDate} at ${formattedTime} EST`;
 </script>
 
 </html>
