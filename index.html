@@ -1,111 +1,375 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
     <title>Matthew Flores</title>
 
-    <link rel="stylesheet" href="css/style2025.css" type="text/css">
-
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Matthew Flores" />
-    <meta property="og:url" content="http://" />
-    <meta property="og:description" content="Artist, Friend">
+    <meta property="og:url" content="http://matthew-flores.com" />
+    <meta property="og:description" content="Your Friend,">
 
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Matthew Flores">
-    <meta name="twitter:url" content="http://">
-    <meta name="twitter:description" content="Artist, Friend">
+    <meta name="twitter:url" content="http://matthew-flores.com">
+    <meta name="twitter:description" content="Your Friend,">
 
 
-    <link rel="icon" href="/img/favicon_cool16.png" sizes="16x16">
-    <link rel="icon" href="/img/favicon_cool32.png" sizes="32x32">
+    <link rel="icon" href="/img/flag.gif" sizes="16x16">
+    <link rel="icon" href="/img/flag.gif" sizes="32x32">
 
 </head>
 
-<body class="home">
+<!-- Commenting out image overlay for now <link rel="stylesheet" href="style.css" type="text/css"> -->
 
-    <section class="clouds">
-        <div id="cloud">
-            <img class="cloud1" src="img/cloud1.png">
-        </div>
-
-        <div id="cloud">
-            <img class="cloud2" src="img/cloud2.png">
-        </div>
-    </section>
-
-    <div id="headerhome">
-        <a class="home"
-            href="CV_Flores.pdf"
-            target="_blank">Matthew Flores</a> is an <a class="home" href=work/mrwarmth.html> artist</a>, <a
-            class="home" href=design.html> designer</a>, and educator
-        currently based in Knoxville, TN USA. He is the 2023-25 Graphic Design Fellow at the University of Tennessee
-        School
-        of Design. You can email him <a class="home" href="mailto:info@matthew-flores.com">here</a>;
-        <a class="home" href="https://instagram.com/matthewflores" target="_blank">this</a> is his Instagram, his <a
-            class="home" href="CV_Flores.pdf" target="_blank">CV</a>, his <a class="home"
-            href="https://are.na/matthew-flores" target="_blank">are.na</a>,
-        and his <a class="home" href="https://matthew-flores.tumblr.com" target="_blank">blog</a>.
-        <br>
-        <br>
-        ----------
-        <br>
-        <br>
-        <p><a class="home" href='/work/mrwarmth.html'>Selected Work</a> | <a class="home" href='/currently.html'>Currently</a>
-        </p>
-    </div>
-
-    <div class="updatestatus">
-      <p>This space is currently being updated once a season. <span id="timestamp"></span></p>
-    </div>
-</body>
-
-<script>
-   function updateGradientBackground() {
-      const body = document.body;
-
-      // Ensure the body has the "home" class
-      if (!body.classList.contains('home')) return;
-
-      const hour = new Date().getHours();
-      let gradient;
-
-      if (hour >= 6 && hour < 12) {
-        // Morning gradient
-        gradient = 'linear-gradient(to bottom, #87CEEB, #FFFFFF)';
-
-      } else if (hour >= 12 && hour < 18) {
-        // Afternoon gradient
-        gradient = 'linear-gradient(rgb(12, 79, 193), rgb(12, 79, 193))';
-
-      } else if (hour >= 18 && hour < 20) {
-        // Evening gradient
-        gradient = 'linear-gradient(#144282, #f5a94c)';
-
-      } else {
-        // Night gradient
-        gradient = 'linear-gradient(to top, #191970, #000000)';
-      }
-
-      // Apply the gradient
-      body.style.backgroundImage = gradient;
+<style>
+    li {
+        list-style-type: '-';
     }
 
-    // Run the function after the DOM has loaded
-    document.addEventListener('DOMContentLoaded', () => {
-      updateGradientBackground();
-      setInterval(updateGradientBackground, 60 * 60 * 1000); // Update every hour
-    });
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: white;
+    }
 
-    // Last Modified timestamp controls
-    const lastModified = new Date(document.lastModified);
-  const formattedDate = lastModified.toLocaleDateString(); // Format the date
-  const formattedTime = lastModified.toLocaleTimeString(); // Format the time
-  document.getElementById("timestamp").innerHTML = `Last modified on ${formattedDate} at ${formattedTime} EST`;
+    hr {
+        border: 0.5px solid black;
+    }
 
-</script>
+    a {
+        color: blue;
+    }
+
+    a:visited {
+        color: blue;
+    }
+
+    a:hover {
+        font-style: italic;
+    }
+
+    .container {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+
+    .art {
+        column-count: 2;
+    }
+
+    .art img {
+        width: 100%;
+        height: fit-content;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .art {
+            column-count: 1;
+        }
+    }
+</style>
+
+<body>
+
+    <em>Your Friend,</em>
+    <h1>Matthew Flores</h1>
+    Send a note to INFO@MATTHEW-FLORES.COM to get in touch
+
+    <br><br>
+    <span>
+        <img src="/img/Antenna.gif">
+        <img src="/img/flag.gif">
+    </span>
+    <br>
+    <br>
+
+    <a href="https://instagram.com/matthewflores" target="_blank">INSTAGRAM</a> | <a
+        href="https://are.na/matthew-flores" target="_blank">ARE.NA</a> | <a href="https://goodboyprojects.net"
+        target="_blank">GOOD BOY PROJECTS</a> | <a href="https://no-soap.net" target="_blank">NO SOAP, RADIO</a>
+    <br><br>
+    <hr>
+
+    <img src="/img/ska2.png" style="width: 100%;">
+
+    <h2>Currently:</h2>
+    <div class="list" style="column-count: 2;">
+        IN:<br>
+        -<a href="https://www.youtube.com/watch?v=wlKrnYWXEK8" id="in1" target="_blank">Fill Flash</a><br>
+        -<a href="https://no-soap.net" id="in2" target="_blank">Radical Narrowcasting</a><br>
+        -<a href="https://www.are.na/matthew-flores/toward-a-weirder-internet" id="in3"
+            target="_blank">Neo-Luddism</a><br>
+        -<a href="https://www.youtube.com/watch?v=bsfX6xqCBks" id="in4" target="_blank">ANDY ROONEY</a><br>
+        -<a href="https://www.youtube.com/watch?v=nKa3S98jrMU" id="in5" target="_blank">Sprezzatura</a><br>
+        -<a href="https://www.youtube.com/watch?v=6ONscxNkcBE" id="in6" target="_blank">Ambient Sport</a><br>
+        -<a href="https://www.artima.com/articles/the-simplest-thing-that-could-possibly-work#part3" id="in7"
+            target="_blank">Do the Simplest Thing that Could Possibly Work</a><br>
+        -<a href="https://www.instagram.com/p/C9xZ9GJxPZp/?img_index=1" id="in8" target="_blank">Paste-Up</a><br>
+        -<a href="https://www.youtube.com/watch?v=17jZ8FrlaoM" id="in9" target="_blank">Hitting Singles</a><br>
+        -<a href="https://www.youtube.com/watch?v=SaycPk1DbUM" id="in10" target="_blank">Catching Waves</a><br>
+        <br>
+
+        Out:<br>
+        -Accumulation<br>
+        -Tools Before Tasks<br>
+        -<a href="https://youtu.be/nMdEjn-I28E/" id="out1" target="_blank">Long Cons</a><br>
+        -<a href="https://www.youtube.com/watch?v=TKVuCUD_dyY" id="out2" target="_blank">Long Counts</a><br>
+        -<a href="https://d2w9rnfcy7mm78.cloudfront.net/1371609/large_19ecbdb37c13562230a4319a76a2189c.jpg?1509064332?bc=1e"
+            id="out3" target="_blank">Krazy Kat</a><br>
+        -<a href="https://www.youtube.com/watch?v=YxD3pT8C9-A" id="out4" target="_blank">Shaggy Dogs</a><br>
+        -<a href="https://www.youtube.com/watch?v=RvEkYESDpFQ" id="out5" target="_blank">Critical Theory</a><br>
+        -<a href="https://www.youtube.com/watch?v=YGiDbIVhgkM" id="out6" target="_blank">Dirt Work</a><br>
+        -<a href="https://www.youtube.com/watch?v=TSYV-nEE300&feature=emb_title" id="out7" target="_blank">High wires
+            of his own making</a><br>
+        -<a href="https://www.youtube.com/watch?v=yUBA_KR-VNU" id="out8" target="_blank">Doing Nothing</a>
+    </div>
+    <p>as of: 3/20/2025</p>
+
+    <img src="/img/ska.png" style="width: 100%;">
+
+    <!-- Gonna Hide Reading and Listening, for Now
+
+    <h2>Reading</h2>
+    <li><em>Trickster Makes this World: Mischief, Myth, and Art</em>, Lewis Hyde (1998)</li>
+    <li><em>What It Takes: The Way to the White House</em>, Richard Ben Cramer (1992)</li>
+    <li><em>Radio as Art: Concepts, Spaces, Practices</em> (2019)</li>
+    <li><em>We the Dead: Preserving Data at the End of the World</em>, Brian Michael Murphy (2022)</li>
+
+    <h2>Listening</h2>
+    <li id="listening1"><a
+            href="https://open.spotify.com/album/6oUeivCrkGIQwM9uSy0N1P?si=H5V9A2kLQw2XFNmuGoel2A"><em>Sunflower</em></a>,
+        The Beach Boys (1970)</li>
+    <li id="listening2"><a href="https://open.spotify.com/show/070MmBvMBnTatKj5deEb59?si=b994dcfcc75a476f"><em>Good
+                One: A Podcast About Jokes</em></a></li>
+    <li id="listening3"><a
+            href="https://open.spotify.com/album/2mFdn8NoYXXDsXsOjyoO8h?si=U5tsD3tISY2Oq41dbb42Mw"><em>The
+                High Priest of Reggae</em></a>, Laurel Aitken (2009)</li>
+    <li id="listening4"><a href="https://open.spotify.com/album/1KErFGaU1RWUTJDeHKJoK2?si=HeK7TXTaRV-pq83FMRbiYQ"><em>I
+                Survived, It's Over</em></a>, Rich Ruth (2022)</li>
+
+    <br>
+
+    -->
+
+    <hr>
+
+    <h2>Selected Work:</h2>
+
+    <div class="container">
+
+        <div class="art">
+            <img src="/img/work/2024-11-06_Portfolio-Knievel.gif">
+            <p>
+                <em>Caesar's Palace Jump</em><br>
+                576 pages, laser print on 8.5” x 11”, binder bound<br>
+                (2024)
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/helloworld.jpg">
+            <p>
+                <em>Hello, World</em><br>
+                Radiofax transmission, 44:25 min.<br>
+                Published as 90 minute cassette<br>
+                (2024)<br>
+                Listen here:<br>
+                <audio controls>
+                    <source src="img/work/" type="audio/ogg">
+                  </audio>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/Cleo_YTMND_JWT-2-funny.jpg">
+            <p>
+                <em>I Was Trying to Describe You to Someone (Funny Fone)</em><br>
+                Coin-Operated Joke Machine<br>
+                12” x 12” x 18”<br>
+                (2024)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/imfeelinglucky.png">
+            <p>
+                <em>I'm Feeling Lucky</em><br>
+                <a href="https://imfeelinglucky.biz" target="_blank">Website</a><br>
+                (2017-Current)
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/2024-10-06_Portfolio-Ask-Whitey-Ford.png">
+            <p>
+                <em>Ask Whitey Ford</em><br>
+                8.5" x 11"<br>
+                Risograph print<br>
+                (2024)
+            </p>
+        </div>
+
+        <div class="art">
+            <video width="100%" controls>
+                <source src="/img/work/mothstory1.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                <em>Robert's Moth Joke</em><br>
+                Digital Video Loop<br>
+                (2024)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/2024-11-08_Whos-on-First_poster-mock.png">
+
+            <p>
+                <em>Who's on First?</em><br>
+                Poster<br>
+                24" x 36"<br>
+                (2024)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/Cleo_YTMND_JWT-11-nagy.jpg">
+            <p>
+                <em>EM-1.2 (Internet Picture)</em><br>
+                8.5" x 11"<br>
+                Laser Print<br>
+                (2024)
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/alfred.jpg">
+
+            <p>
+                <em>It Takes One to Know One...and Vice Versa </em><br>
+                Acrylic print on linen<br>
+                50" x 50"<br>
+                (2023)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/doodle.png">
+            <p>
+                <em>Self-Portrait</em><br>
+                5.5" x 8.5"<br>
+                Perfect bound doodle pad<br>
+                (2023)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/tug.png">
+            <p>
+                <em>I Require a Tug</em><br>
+                Embroidered underpants, nylon flag<br>
+                48" x 24"<br>
+                (2023)<br>
+                Installed at <a href="https://sparksburg.com/" target="_blank">My Friend Sparksburg</a>
+            </p>
+        </div>
+
+        <div class="art">
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/Q55zlLQgppE?si=hC_TmIjDQaViq9f7"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>
+                <em>Heaven</em><br>
+                Prayer box, electronics<br>
+                3.5" x 2" x 1"
+                (2023)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/rickles.png">
+
+            <p>
+                <em>I'll Tell You This (Mister Warmth)</em><br>
+                C-Print from the Estate of Barbra and Don Rickles<br>
+                8" x 10" each<br>
+                (2022)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/squeaky-3.jpg">
+
+            <p>
+                <em>Art For Alternative Audiences 003: Hound Dog 12"</em><br>
+                12" LP, Edition of 1<br>
+                (2019)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/punchline.jpg">
+
+            <p>
+                <em>No Punch Line a Knife</em><br>
+                Algorithmic Audio Performance, microphone stand, speaker,<br>
+                (2018)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/dw2BDYnGfU8?si=7LnnUAD1u9xnms72"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <p>
+                <em>Art for Alternative Audiences 001 & 002: Who's A Good Boy? / Hound Dog </em><br>
+                Digital Video Loop<br>
+                (2018)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/eyebig_rgb.jpg">
+
+            <p>
+                <em>Self-Portrait as Delayed Recognition </em><br>
+                Archival Inkjet Print<br>
+                40" x 50"<br>
+                (2017)<br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/mistakes.jpg">
+
+            <p>
+                <em>All of My Mistakes in 2015</em><br>
+                Archival Inkjet Prints<br>
+                24" x 36" each<br>
+                (2016)<br>
+            </p>
+        </div>
+
+    </div>
+
+    <p>This space is currently being updated once a season. <span id="timestamp"></span></p>
+
+    <script type="text/javascript">
+        // Last Modified timestamp controls
+        const lastModified = new Date(document.lastModified);
+        const formattedDate = lastModified.toLocaleDateString(); // Format the date
+        const formattedTime = lastModified.toLocaleTimeString(); // Format the time
+        document.getElementById("timestamp").innerHTML = `Last modified on ${formattedDate} at ${formattedTime} EST`;
+    </script>
+
+
+</body>
 
 </html>
