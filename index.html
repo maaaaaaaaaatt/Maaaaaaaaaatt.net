@@ -28,6 +28,11 @@
 <!-- Commenting out image overlay for now <link rel="stylesheet" href="style.css" type="text/css"> -->
 
 <style>
+    @font-face {
+        font-family: IO;
+        src: url(/MDIOTrial-Regular.otf);
+    }
+
     li {
         list-style-type: '-';
     }
@@ -35,6 +40,7 @@
     body {
         font-family: 'Times New Roman', Times, serif;
         background-color: white;
+        margin-left: 10px;
     }
 
     hr {
@@ -43,6 +49,10 @@
 
     a {
         color: blue;
+    }
+
+    h2 {
+        margin-bottom: 0;
     }
 
     a:visited {
@@ -60,19 +70,41 @@
     }
 
     .art {
-        column-count: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 10px;
+        align-items: start;
+    }
+
+    .image-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .art img {
         width: 100%;
         height: auto;
-        height: fit-content;
+        border: 1px black solid;
     }
 
+    .art p {
+        margin-top: 0;
+    }
+
+    .description {
+        font-style: italic;
+    }
+
+    marquee {
+        font-size: 24pt;
+        background-color: yellow;
+    }
 
     @media only screen and (max-width: 600px) {
         .art {
-            column-count: 1;
+            grid-template-columns: 1fr;
         }
 
         .art img {
@@ -83,11 +115,11 @@
 </style>
 
 <body>
-
     <em>Your Friend,</em>
     <h1>Matthew Flores</h1>
-    Send a note to INFO@MATTHEW-FLORES.COM to get in touch<br>
-    or send a fax to 470-231-2750
+    Send a note to <a href="mailto:matthew.flores8@gmail.com?cc=info@matthew-flores.com">INFO@MATTHEW-FLORES.COM</a> to
+    get in touch<br>
+    or send a fax to 470-231-2750 (really!)
 
     <br><br>
     <span>
@@ -98,11 +130,38 @@
     <br>
     <br>
 
-    <a href="https://instagram.com/matthewflores" target="_blank">INSTAGRAM</a> | <a
+     <a href="https://matthew-flores.com" target="_blank">HOME</a> | <a href="https://instagram.com/matthewflores" target="_blank">INSTAGRAM</a> | <a
         href="https://are.na/matthew-flores" target="_blank">ARE.NA</a> | <a href="https://goodboyprojects.net"
-        target="_blank">GOOD BOY PROJECTS</a> | <a href="https://no-soap.net" target="_blank">NO SOAP, RADIO</a> | <a href="https://maaaaaaaaaatt.net" target="_blank">MAAAAAAAAAATT.NET</a>
-    <br><br>
+        target="_blank">GOOD BOY PROJECTS</a> | <a href="https://no-soap.net" target="_blank">NO SOAP, RADIO</a> | <a
+        href="" target="_blank">CV</a>
+    <br>
+    <br>
+
     <hr>
+    <br>
+
+    <p style="font-size: 16pt;">Matthew Flores is an interdisciplinary artist and designer currently based in South
+        Carolina, where is is an
+        Assistant Professor of Graphic Design at Coastal Carolina University. His studio practice seeks to bridge the
+        gap between the discourse of design and the discourse of technology in order to articulate how each function as
+        interrelated tools for communication.
+        <br><br>
+        He is interested in: experimental forms of publication, alternatitive tools for making, the differences between
+        simplicity and minimalism in design, hacking as an ethos, the power of mis-communication, <a
+            href="https://www.are.na/matthew-flores/neo-luddism-vx34vkvsc3y" target="_blank">neo-Luddism</a> and
+        ethical forms of sabotage and resistance, <a href="https://www.are.na/matthew-flores/shakers-quakers"
+            target="_blank">Shaker work culture</a> and how it can be applied to <a
+            href="https://jeffhuang.com/designed_to_last/" target="_blank">building the Internet</a>, default design
+        aesthetics (including <a href="https://contemporary-home-computing.org/prof-dr-style/">Prof. Dr. Style</a> and
+        yes, Times New Roman),
+        saying <em>"that's bad UX"</em> when something
+        annoys him, reclaiming obsolete technology, <a href="https://www.are.na/matthew-flores/monospace-v7ec5oc6sx0"
+            target="_blank">collecting monospace typefaces</a>, and oxford cloth button downs.
+        <br><br>
+    </p>
+       
+    <hr>
+
 
     <img src="/img/ska2.png" style="width: 100%;">
 
@@ -137,39 +196,213 @@
             of his own making</a><br>
         -<a href="https://www.youtube.com/watch?v=yUBA_KR-VNU" id="out8" target="_blank">Doing Nothing</a>
     </div>
-    <p>as of: 9/27/2025</p>
 
-    <img src="/img/ska.png" style="width: 100%;">
-
-    <!-- Gonna Hide Reading and Listening, for Now
-
-    <h2>Reading</h2>
-    <li><em>Trickster Makes this World: Mischief, Myth, and Art</em>, Lewis Hyde (1998)</li>
-    <li><em>What It Takes: The Way to the White House</em>, Richard Ben Cramer (1992)</li>
-    <li><em>Radio as Art: Concepts, Spaces, Practices</em> (2019)</li>
-    <li><em>We the Dead: Preserving Data at the End of the World</em>, Brian Michael Murphy (2022)</li>
-
-    <h2>Listening</h2>
-    <li id="listening1"><a
-            href="https://open.spotify.com/album/6oUeivCrkGIQwM9uSy0N1P?si=H5V9A2kLQw2XFNmuGoel2A"><em>Sunflower</em></a>,
-        The Beach Boys (1970)</li>
-    <li id="listening2"><a href="https://open.spotify.com/show/070MmBvMBnTatKj5deEb59?si=b994dcfcc75a476f"><em>Good
-                One: A Podcast About Jokes</em></a></li>
-    <li id="listening3"><a
-            href="https://open.spotify.com/album/2mFdn8NoYXXDsXsOjyoO8h?si=U5tsD3tISY2Oq41dbb42Mw"><em>The
-                High Priest of Reggae</em></a>, Laurel Aitken (2009)</li>
-    <li id="listening4"><a href="https://open.spotify.com/album/1KErFGaU1RWUTJDeHKJoK2?si=HeK7TXTaRV-pq83FMRbiYQ"><em>I
-                Survived, It's Over</em></a>, Rich Ruth (2022)</li>
+    <p><span id="timestamp2"></span></p>
 
     <br>
 
-    -->
+    <img src="/img/ska.png" style="width: 100%;">
 
+    <!-- Hiding Reading/Listening for now
+    <div class="list" style="column-count: 2;">
+        <h2>Reading</h2>
+        <li><em>Trickster Makes this World: Mischief, Myth, and Art</em>, Lewis Hyde (1998)</li>
+        <li><em>The Typographic Medium</em>, Kate Brideau (2021)</li>
+        <li><em>The Soul of a New Machine</em>, Tracy Kidder (1981)</li>
+        <br>
+        <h2>Listening</h2>
+        <li id="listening1"><a href="https://www.nts.live/shows/the-breakfast-show-flo"><em>The NTS Breakfast Show with
+                    Flo</em></a></li>
+        <li id="listening2"><a href="https://open.spotify.com/show/070MmBvMBnTatKj5deEb59?si=b994dcfcc75a476f"><em>Good
+                    One: A Podcast About Jokes</em></a></li>
+        <li id="listening3"><a href="https://www.youtube.com/watch?v=B27RS3-_mfQ"><em>30th Century Man</em></a>, Scott
+            Walker (1969)</li>
+        <li id="listening4"><a href="https://www.youtube.com/watch?v=SjiNr1wpmRc"><em>Journals</em></a>, Baba Stillz
+            (2021)</li>
+    </div>
+
+-->
+    <hr>
+    <marquee><a href="#studentwork">🫵 JUMP DOWN TO STUDENT WORK 👇</a></marquee>
     <hr>
 
-    <h2>Selected Work:</h2>
+    <h2 id="categories">Selected Work by Category:</h2>
+    <a href="#digital">DIGITAL SPACES</a> |
+    <a href="#tools">ALTERNATIVE TOOLS</a> |
+    <a href="#telecom">TELECOMMUNICATIONS</a> |
+    <a href="#hardware">HARDWARE/SOFTWARE</a> |
+    <a href="#professional">PROFESSIONAL WORK</a>
+
+    <br><br><br>
 
     <div class="container">
+
+        <!--DIGITAL SPACES-->
+
+        <h2 id="digital">DIGITAL SPACES</h2>
+        <span class="description">How can we build unique and curious experiences out of digital material?</span><br>
+        <a href="#categories">back ⮥</a>
+
+        <br>
+        <br>
+
+        <div class="art">
+            <div class="image-stack">
+                <img src="/img/work/nosoap-1.jpg">
+                <img src="/img/work/nosoap-2.jpg">
+            </div>
+            <p>
+                <em>No Soap, Radio</em><br>
+                Radio Station, Website<br>
+                (2022-Ongoing)<br>
+                Listen<a href="https://no-soap.net" target="blank"> Here↩</a>
+                <br><br>
+                No Soap Radio is a modular, Part 15 AM radio station that treats broadcasting as both a
+                design medium and a physical system. Operating at the scale of a few square kilometers rather than a
+                city, the
+                project explores how transmission, reception, and limitation shape meaning and communication. By working
+                within the
+                constraints of Part 15 AM—low power, short range, and susceptibility to noise—No Soap Radio foregrounds
+                the
+                material conditions of radio: antennas as design objects, static as texture, and proximity as an
+                organizing principle. The station functions as a flexible platform for sound works, experimental
+                programming, and teaching, emphasizing radio as an intimate, local form of publication and
+                communication.
+                <br><br>
+                I designed and built a custom website for No Soap, Radio using
+                Kirby CMS and developed a fully self-hosted backend platform using AzuraCast, all running on a Raspberry
+                Pi 5 sitting on my desk.
+                <br><br>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/erosion.png">
+            <p>
+                <em>100 Year Website</em><br>
+                Website<br>
+                (2024)<br>
+                <a href="https://maaaaaaaaaatt.github.io/100yearwebsite/" target="blank">More Info↩</a>
+                <br><br>
+                A simple gesture and meditation on the often delicate nature of websites, how links rot and don't come
+                back, the dozens of browser tabs I have open at any given moment, and how computers are just rocks we
+                taught to think.
+                <br><br>
+                100 Year Erosion is a website that's designed to slowly erode, turning the mountain to dust over 100
+                years - but only as long as the page is live in your browser.
+                <br><br>
+                All it takes is a single line of CSS!
+                <br><br>
+                <code> .mountain {
+                    animation: fadeOut ease 3153600000s;
+                    }</code>
+
+            </p>
+        </div>
+
+        <div class="art">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/SULN2ngZ8Dc?si=kbF9qsw1Pne9SJME"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>
+                <em>Bartelby</em><br>
+                Livestream, Performance<br>
+                (2024)<br>
+                <br>
+                In December 2024, I was invited to participate in the <a href="https://www.instagram.com/thing.tube/"
+                    target="blank">@thing.tube</a> NO-THING 24 hour livestream.
+                <br><br>
+                thing.tube is a peer-to-peer livestreaming platform and a form of software development as performance
+                art. By decentralizing streaming through a variety of low- and high-tech interventions, the project
+                offers an alternative to mainstream platforms like Twitch and YouTube, granting artists greater control
+                over their work and its distribution. This approach fosters direct interaction between creators and
+                visitors, without the mediation of conventional channels.
+                <br><br>
+                This livestream was organized around the theme of "nothing", so my contribution was to spend the day
+                coding a website with the full text of Herman Melville's "Bartelby, the Scrivener", taking requests from
+                the chat for CSS style tweaks.
+            </p>
+        </div>
+
+        <div class="art">
+            <div class="image-stack">
+                <img src="/img/work/esp32.png">
+                <img src="/img/work/esp32.gif">
+            </div>
+            <p>
+                <em>Room-Sized Websites</em><br>
+                ESP-32 Modules, Websites, Installation<br>
+                (2025)<br>
+                <br>
+                These room-sized websites reimagine the web as a spatial, embodied experience. Each site is custom-coded
+                and developed using a network of ESP-32 microcontrollers that create localized Wi-Fi access points using
+                captive portals. An ESP-32's signal only reaches a few dozen feet from each board, encouraging the
+                user's movement through
+                the room and making proximity, orientation, and chance part of the browsing experience.
+                <br><br>
+                The work explores ideas of narrowcasting, access, and scale, asking the user to consider what a website
+                becomes
+                when it is temporary, offline, and inseparable from a physical environment. By designing, developing,
+                and deploying both the hardware and software, I collapse distinctions between server, interface, and
+                exhibition architecture.
+            </p>
+        </div>
+
+        <div class="art">
+            <video width="100%" height="auto" controls>
+                <source src="/img/work/vols.design.mov" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+            </video>
+            <p>
+                <em>vols.design</em><br>
+                Website, Class<br>
+                (2025)<br><br>
+                vols.design was a homepage for my GRDS 256 - Interaction Design classes at the University of
+                Tennessee-Knoxville School of Design. One of my goals when rebuilding this class was to teach students
+                how to build rich digital spaces and experiences with the simplest tools possible - in our instance,
+                vanilla HTML, CSS, and a little bit of JS.
+                <br><br>
+                As a demonstration, I built vols.design using these same tools and principles. It offered a
+                straightforward but powerful example that you don't need the latest (and often sluggish) front-end
+                frameworks to design a website.
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/transmission-reception.jpg">
+            <p>
+                <em>RADIO FREE GRDS</em><br>
+                Radio Station, Website, Class<br>
+                (2025)<br>
+                Listen<a href="https://transmission-reception.com" target="blank"> Here↩</a>
+                <br><br>
+                Transmission//Reception was a special topics course I taught at UTK in Spring 2025. In this studio,
+                students explored broadcasting through a variety of graphic forms, materials, and technologies. In
+                particular, students programmed and operated a Part 15 AM radio station transmitting both within the Art
+                + Architecture building and streaming online.
+                <br><br>
+                RADIO FREE GRDS was an experiment in collaborative broadcasting, transmitted from the <a
+                    href="https://www.instagram.com/utkschoolofdesign/" target="_blank">@utkschoolofdesign</a>. The
+                signal is comprised of 18
+                individual stations, each with a unique programming strategy, aesthetic, and perspective.
+                <br><br>
+                Using the concept of broadcasting as a framework, students designed both physical (fliers, posters, and
+                beyond) and invisible (radio broadcasts, sound design, and performance) media that engage with and
+                complicate the act of communicating, while thinking critically about the importance of medium and
+                message in their work. We researched and pulled inspiration from moments of intervention and subversion
+                in public communication, with a special focus on underground, freeform, alternative, guerrilla, and
+                pirate forms.
+            </p>
+        </div>
+
+        <!--ALTERNATIVE TOOLS-->
+        <h2 id="tools">ALTERNATIVE TOOLS</h2>
+        <span class="description">How can we design and craft tools that influence the way we design and craft the
+            world?</span><br>
+        <a href="#categories">back ⮥</a>
+        <br>
+        <br>
 
         <div class="art">
             <img src="/img/work/2024-11-06_Portfolio-Knievel.gif">
@@ -177,8 +410,145 @@
                 <em>Caesar's Palace Jump</em><br>
                 576 pages, laser print on 8.5” x 11”, binder bound<br>
                 (2024)
+                <br><br>
+                576 pages, laser print on letter size paper (the king of paper formats), binder-bound.
+                <br><br>
+                I spent much of 2024 finding ways to avoid using Adobe Creative Cloud software (I optimistically called
+                it "My Year of Alternative Tools") as both a protest against Adobe's increasingly pushy use of
+                generative AI, but also as a way to think through my process as a designer and user. <em>Caesar's Palace
+                    Jump</em> in particular is an experiment in finding a complicated workaround in order to make a
+                simple book
+                layout.
+                <br><br>
+                Alternative tools workflow:<br>
+                download video using semi-legal internet tools ➡️ extract frames using ffmpeg command line tool (I think
+                the command was something like <code>ffmpeg -i knievel.mp4 -qscale:v 1
+                    exported-frames/frame_%04d.png</code>) ➡️
+                create the page layout using Finder and Keynote, adding page numbers and images ➡️ printing on the
+                mailroom Xerox (don’t tell the IT department)
+                <br>
             </p>
         </div>
+
+        <div class="art">
+            <video width="100%" height="auto" controls>
+                <source src="/img/work/imfeelinglucky.mov" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+            </video>
+            <p>
+                <em>I'm Feeling Lucky</em><br>
+                Website<br>
+                (2017-Current)<br>
+                <br><br>
+                I’m Feeling Lucky is an experiment in direct-to-consumer art.
+                <br><br>
+                A viewer purchases an original print through Paypal, which triggers a series of automated server
+                processes - the code randomly selects an image from Google, applies a pre-made template (with my
+                signature), and sends the file to be printed and shipped. The customer doesn’t know what print they’re
+                buying until it arrives, and I never see what images ultimately are being sold with my signature
+                attached (really, I don’t want to see it. Please don’t tag me
+                [@matthewflores](https://www.instagram.com/matthewflores/) with any purchased prints with my name on
+                them).
+                <br><br>
+                <a href="https://imfeelinglucky.biz" target="blank">More Info↩</a>
+            </p>
+        </div>
+
+        <div class="art">
+            <img src="/img/work/2024-11-08_FinderJurgen.png">
+            <p>
+                <em>Finder Jürgen</em><br>
+                Image Files, Finder Window<br>
+                (2025)<br>
+                <br>
+                Finder Jürgen is an experiment in alternative publishing that asks whether a book can be laid out and
+                read within a Finder window.<br><br>
+                Rather than a fixed sequence of pages, the publication exists as a live,
+                ephemeral system: files, folders, and metadata become typographic and structural elements. The content
+                continuously changes in response to how the user resizes, sorts, opens, and navigates the window, making
+                interaction an integral part of reading. By treating the operating system interface as simultaneously a
+                medium and
+                a layout tool, the project reframes publishing as a dynamic, user-driven process rather than a static
+                object.
+            </p>
+        </div>
+
+        <div class="art">
+            <video width="100%" height="auto" controls>
+                <source src="/img/work/kate_scan-720.mov" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+            </video>
+            <p>
+                <em>PROCESSING/CREATIVE CODING</em><br>
+                Image Files, Finder Window<br>
+                (2024-Ongoing)<br>
+                <br>
+                As part of <em>My Year of Alternative Tools</em>, I've been experimenting with Processing and p5.js to
+                code graphics as a way of
+                stepping outside commercial design software and returning to a more intuitive way of making.
+                <br><br>
+                Writing code to generate form forced me to think about process over polish, and how to embrace
+                variability,
+                constraint, and imperfection as design values. What happens when I focus on play and experiment rather
+                than the dreaded "deliverable"?
+            </p>
+        </div>
+
+        <div class="art">
+            <div class="image-stack">
+                <img src="/img/work/cerneabbas1.png">
+                <img src="/img/work/cerneabbas3.gif">
+            </div>
+            <p>
+                <em>CERNE ABBAS GIANT.PDF</em><br>
+                Modified PDF File<br>
+                (2025)<br>
+                <br>
+                Quick: what’s the maximum allowed dimensions of a PDF file? Any guesses? I’ll wait.
+                <br><br>
+                Answer: <a href="https://pdfa.org/wp-content/uploads/2023/07/Max-Size-tweet-872x1024.png"
+                    target="_blank">15 million inches by 15 million inches</a> or about 381 km2.
+                <br><br>
+                I thought this was a very funny but also very real limitation, so I looked for a reasonably funny image
+                to display at its maximum size. I landed on an actual size PDF of the Cerne Abbas Giant, a (semi) famous
+                example of pseudo-indigenous land art in Dorset, England.
+                <br><br>
+                Naturally, I had to print it out to test (again, please don’t tell the IT department I used a staff
+                printer).
+            </p>
+        </div>
+
+        <div class="art">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/tzhYAu63SvA?si=i-hN5uis088NfJHc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>
+                <em>PASTE-UP HELPER</em><br>
+                Web Application<br>
+                (2025)<br><br>
+                I like to bridge between very digital and very analog ways of making in the studio - lately, this means
+                designing flyers and print projects using a traditional paste-up layout technique.
+                <br><br>
+                A major pain point of this method is setting and resetting text and images in different sizes - so I put
+                together a very quick and very rough helper to make it go a little faster and smoother.
+                <br><br>
+                Paste-Up Helper lets you add text/images, select your font (more coming soon!), choose some sizing
+                options, and export to .PDF for printing and cutting and pasting! All built in a basic browser app with
+                vanilla HTML/CSS/JS.
+                <br><br>
+                It's important to make your own tools, even if they're coarse and janky!
+            </p>
+        </div>
+
+
+
+        <!--TELECOMMUNICATIONS-->
+        <h2 id="telecom">TELECOMMUNICATIONS</h2>
+        <span class="description">How does technology affect the ways in which we communicate?</span><br>
+        <a href="#categories">back ⮥</a>
+        <br>
+        <br>
 
         <div class="art">
             <img src="/img/work/helloworld.jpg">
@@ -186,61 +556,20 @@
                 <em>Hello, World</em><br>
                 Radiofax transmission, 44:25 min.<br>
                 Published as 90 minute cassette<br>
-                (2024)<br>
+                (2025)<br>
                 Listen here:<br>
                 <audio controls>
-                    <source src="img/work/" type="audio/ogg">
-                  </audio>
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/Cleo_YTMND_JWT-2-funny.jpg">
-            <p>
-                <em>I Was Trying to Describe You to Someone (Funny Fone)</em><br>
-                Coin-Operated Joke Machine<br>
-                12” x 12” x 18”<br>
-                (2024)<br>
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/imfeelinglucky.png">
-            <p>
-                <em>I'm Feeling Lucky</em><br>
-                <a href="https://imfeelinglucky.biz" target="_blank">Website</a><br>
-                (2017-Current)
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/2024-11-08_NoSoapRadio_webmock.png">
-            <p>
-                <em>No Soap Radio</em><br>
-                Radio Station<br>
-                (2024)<br>
-                Listen <a href="https://no-soap.net">here</a>
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/2024-10-06_Portfolio-Ask-Whitey-Ford.png">
-            <p>
-                <em>Ask Whitey Ford</em><br>
-                8.5" x 11"<br>
-                Risograph print<br>
-                (2024)
-            </p>
-        </div>
-
-        <div class="art">
-            <video width="100%" controls>
-                <source src="/img/work/mothstory1.mp4" type="video/mp4">
-            </video>
-            <p>
-                <em>Robert's Moth Joke</em><br>
-                Digital Video Loop<br>
-                (2024)<br>
+                    <source src="/img/TX-side-a.wav" type="audio/ogg">
+                </audio>
+                <br><br>
+                As a radio enthusiast and someday Ham Radio Operator (I'm going to take the exam soon, I promise!), much
+                of my time in the studio is finding ways to compare radio technology with visual design, and to see how
+                each can tell us something about the nature of communication.
+                <br><br>
+                A particularly niche activity in the Ham world is EME Moonbounce, where you use the Moon itself as a
+                giant reflector dish, bouncing your signal to the other side of the globe. I always wanted to go to the
+                Moon, so I made a self-portrait, encoded it into a format for radio fax transmission (it sounds a little
+                like dial-up), and recorded it to cassette for a future moon bounce transmission.
             </p>
         </div>
 
@@ -251,61 +580,73 @@
                 Poster<br>
                 24" x 36"<br>
                 (2024)<br>
+                <br>
+                I designed this poster using Hellschreiber (a very antiquated protocol for radio) transmissions of
+                Abbott and Costello's "Who's on First?"
+                routine. I sent each line of the script to myself over shortwave radio, letting atmospheric noise and
+                signal drift corrupt the text into visual static.<br><br>
+                The Hellschreiber's mechanical printing method turns
+                each miscommunication into literal marks on paper: garbled names, dropped words, and interference
+                patterns that mirror the confusion in the original sketch. The poster uses these transmission artifacts
+                as their primary typography, where "What" becomes visual noise and "I Don't Know" disintegrates into
+                pixel scatter. Static isn't a bug here but the actual design language, making the medium perform the
+                same breakdowns as the comedy routine it carries.
             </p>
         </div>
 
         <div class="art">
-            <img src="/img/work/Cleo_YTMND_JWT-8.jpg">
+            <img src="/img/work/Cleo_YTMND_JWT-24.jpg">
             <p>
-                <em>EM-1.2 (Internet Picture)</em><br>
-                8.5" x 11"<br>
-                Laser Print<br>
-                (2024)
+                <em>Information-As-Thing</em><br>
+                Fax Performance, Installation<br>
+                Dimensions Variable<br>
+                (2025)<br>
+                <br>
+                During my solo show, You're the Man Now, Dog, at Cleo in Savannah, Georgia, I would send daily fax
+                transmissions at a fixed time, building an installation piece
+                by piece over the exhibition's run. I installed clipboards to hold the daily print, creating a growing
+                archive of thermal paper artifacts.
+                <br><br>
+                The
+                work operates on multiple temporalities: the slow accumulation of the installation itself, the brief
+                mechanical event of each transmission, and the chance encounter of being present when the fax machine
+                activates. Visitors who showed up at the right moment witnessed the performance aspect, while others saw
+                only its residue. <br><br>
+                I'm very interested in fax technology's particular qualities (its line-by-line rendering,
+                relative slowness, and transmission errors), and this is an attempt to reclaim the weridness of fax as
+                both medium and subject, turning the obsolescence of
+                telecommunication hardware into a gallery event that unfolds whether anyone's watching or not.
             </p>
         </div>
 
+        <!--HARDWARE & SOFTWARE-->
+        <h2 id="hardware">HARDWARE & SOFTWARE</h2>
+        <span class="description">How can we apply a hacker ethos to the interface between digital and
+            physical?</span><br>
+        <a href="#categories">back ⮥</a>
+        <br>
+        <br>
         <div class="art">
-            <img src="/img/work/Cleo_YTMND_JWT-11-nagy.jpg">
-        </div>
-
-        <div class="art">
-            <img src="/img/work/2024-11-08_FinderJurgen.png">
+            <img src="/img/work/Cleo_YTMND_JWT-2-funny.jpg">
             <p>
-                <em>Finder Jürgen</em><br>
-                Image Files, Finder Window<br>
+                <em>I Was Trying to Describe You to Someone (Funny Fone)</em><br>
+                Coin-Operated Joke Machine<br>
+                12” x 12” x 18”<br>
                 (2024)<br>
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/alfred.jpg">
-
-            <p>
-                <em>It Takes One to Know One...and Vice Versa </em><br>
-                Acrylic print on linen<br>
-                50" x 50"<br>
-                (2023)<br>
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/doodle.png">
-            <p>
-                <em>Self-Portrait</em><br>
-                5.5" x 8.5"<br>
-                Perfect bound doodle pad<br>
-                (2023)<br>
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/tug.png">
-            <p>
-                <em>I Require a Tug</em><br>
-                Embroidered underpants, nylon flag<br>
-                48" x 24"<br>
-                (2023)<br>
-                Installed at <a href="https://sparksburg.com/" target="_blank">My Friend Sparksburg</a>
+                <br>
+                Jokes are a terribly intimate form of communication, even if we tend to resist thinking of them in that
+                way. These Funny Fones used to exist more firmly in the context of how we communicate with each other on
+                a daily basis - maybe you remember seeing one in an arcade, or a bowling alley, or at the end of a bank
+                of payphone.
+                <br><br>
+                I repurposed an original Funny Fone and filled it with custom electronics (Arduino, mostly) and code so
+                that instead of playing you a joke, when you pay a quarter it plays an audio telling of Richard
+                Brautigan’s <a href="https://www.youtube.com/watch?v=j9LzKGQS2w8" target="_blank">“I Was Trying to
+                    Describe You to Someone.”</a> The catch: some of the recordings are performed
+                by a human, others by an AI deepfake.
+                Each playback asks whether the voice delivering these
+                lines changes their meaning, whether intimacy survives algorithmic speech, and what happens when you try
+                to make something as private as describing someone you care about a transaction.
             </p>
         </div>
 
@@ -316,101 +657,446 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p>
                 <em>Heaven</em><br>
-                Prayer box, electronics<br>
+                Prayer box, Custom Electronics<br>
                 3.5" x 2" x 1"
-                (2023)<br>
+                (2023)<br><br>
+                I wanted to learn how to design and manufacture (<em>have</em> manufactured, I suppose) PCBs, so I used
+                a very simple box that plays Buddist prayer songs on loop, and added my own circuitry so that it played
+                a slowed down, choir version of the Talking Heads "Heaven".
+
+            </p>
+        </div>
+
+        <!--TYPE & EDITORIAL
+        <h2 id="type">TYPE & EDITORIAL DESIGN</h2>
+        <span class="description"> description of category here description of category here</span>
+        <br>
+        <br>
+        -->
+
+        <!--PROFESSIONAL WORK-->
+        <h2 id="professional">PROFESSIONAL WORK</h2>
+        <span class="description">How can we take a conceptually-driven research practice into a dynamic studio
+            presence?</span><br>
+        <a href="#categories">back ⮥</a>
+        <br>
+        <br>
+
+        <div class="art">
+            <div class="image-stack">
+                <img src="/img/work/gpb_wireframes.png">
+                <img src="/img/work/gpb-design-1.png">
+                <img src="/img/work/gpb-design-2.png">
+                <img src="/img/work/gpb-design-3.png">
+                <img src="/img/work/gpb_radioapp.png">
+            </div>
+            <p>
+                <em>GEORGIA PUBLIC BROADCASTING</em><br>
+                Poster<br>
+                Design, Front-End Development, User Experience<br>
+                (2019-2023)<br>
+                <br>
+                As a UX/UI Designer and Front-End Developer at Georgia Public Broadcasting, I led the effort to rethink
+                and redesign the organization’s digital presence across web and mobile platforms. Working within a
+                public media context, I focused on clarity, accessibility, and editorial structure, ensuring that our
+                news,
+                education, and cultural programming verticals were easy to discover and engaging to navigate. I
+                collaborated
+                closely with the newsroom, engineering, and product teams to translate a complex content ecosystem into
+                coherent user experiences, balancing the needs of diverse audiences with the constraints of legacy
+                systems and public media standards.
+                <br><br>
+                I spearheaded a complete redesign of GPB’s Drupal-based website and companion app, designing and
+                developing user-facing
+                systems that were flexible, scalable, and responsive across devices. This included establishing design
+                patterns, refining navigation and information architecture, and implementing component-based interfaces
+                that could support ongoing growth. By aligning visual design, UX strategy, and front-end development,
+                the redesign modernized GPB’s digital identity while improving performance, usability, and long-term
+                maintainability.
             </p>
         </div>
 
         <div class="art">
-            <img src="/img/work/rickles.png">
+            <div class="image-stack">
+                <img src="/img/work/gpb_gasha.png">
+                <img src="/img/work/gpb_mobileapps.png">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/3cKZe8HaGuA?si=vf5uJ1nGmu1sJ5gk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>
+                <em>GPB Education</em><br>
+                Design, Front-End Development, User Experience<br>
+                (2019-2023)<br>
+                <br>
+                As a Designer for GPB Education, I focused on creating engaging, age-appropriate digital experiences for
+                K–5 students across the state of Georgia. My work centered on the design of a suite of educational games
+                and interactive software that aligned with state curriculum standards while remaining playful,
+                intuitive, and accessible for young learners. I collaborated with educators, curriculum specialists, and
+                developers to translate learning objectives into clear visual systems, interaction patterns, and game
+                mechanics that supported exploration and discovery.
+                <br><br>
+                Across these projects, I emphasized usability and inclusivity—designing interfaces that
+                could be easily understood by early readers, accommodate a wide range of abilities, and perform reliably
+                in classroom environments with varying levels of technology access. I developed visual systems, UI
+                components, and interaction flows that balanced fun with instructional clarity, ensuring that the
+                games functioned as both an educational tool and an inviting entry point to digital learning. This
+                work contributed to a statewide platform that supported teachers, engaged students, and extended public
+                education through thoughtfully designed interactive media.
+            </p>
+        </div>
+
+        <div class="art">
+            <div class="image-stack">
+                <img src="/img/work/oneteam2.png">
+                <img src="/img/work/oneteam1.png">
+            </div>
 
             <p>
-                <em>I'll Tell You This (Mister Warmth)</em><br>
-                C-Print from the Estate of Barbra and Don Rickles<br>
-                8" x 10" each<br>
+                <em>ONETEAM PARTNERS</em><br>
+                Website Design & Development<br>
                 (2022)<br>
+                <br>
+                Website design and development for OneTeam Partners, a pioneer in the Name, Image, Likeness sports
+                market.
             </p>
         </div>
 
         <div class="art">
-            <img src="/img/work/2025-09-27_tropicalbirds.png">
-
+            <img src="/img/work/willieposters.png">
             <p>
-                <em>Tropical Birds</em><br>
-                Glossy Poster Print, Baseball Card, Tape<br>
-                21" x 33"<br>
-                (2022)<br>
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/squeaky-3.jpg">
-
-            <p>
-                <em>Art For Alternative Audiences 003: Hound Dog 12"</em><br>
-                12" LP, Edition of 1<br>
+                <em>Willie Nelson & Friends Museum</em><br>
+                Poster<br>
+                24" x 36" each<br>
                 (2019)<br>
+                <br>
+                Poster campaign for the Willie Nelson & Friend Museum in Nashville, Tennessee.
             </p>
         </div>
 
-        <div class="art">
-            <img src="/img/work/punchline.jpg">
-
-            <p>
-                <em>No Punch Line a Knife</em><br>
-                Algorithmic Audio Performance, microphone stand, speaker,<br>
-                (2018)<br>
-            </p>
-        </div>
-
-        <div class="art">
-            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/dw2BDYnGfU8?si=7LnnUAD1u9xnms72"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <p>
-                <em>Art for Alternative Audiences 001 & 002: Who's A Good Boy? / Hound Dog </em><br>
-                Digital Video Loop<br>
-                (2018)<br>
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/eyebig_rgb.jpg">
-
-            <p>
-                <em>Self-Portrait as Delayed Recognition </em><br>
-                Archival Inkjet Print<br>
-                40" x 50"<br>
-                (2017)<br>
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/mistakes.jpg">
-
-            <p>
-                <em>All of My Mistakes in 2015</em><br>
-                Archival Inkjet Prints<br>
-                24" x 36" each<br>
-                (2016)<br>
-            </p>
-        </div>
-
-        <div class="art">
-            <img src="/img/work/2025-09-27_ali.jpg">
-
-            <p>
-                <em>His Hands Can't Hit What His Eyes Can't See</em><br>
-                Archival Inkjet Print<br>
-                24" x 36" each<br>
-                (2014)<br>
-            </p>
-        </div>
 
     </div>
+
+    <div class="container" id="studentwork">
+
+        <!--STUDENT WORK-->
+        <hr>
+        <marquee id="digital">👇👇👇STUDENT WORK👇👇👇</marquee>
+        <hr>
+
+        <span class="description">How does the classroom become a laboratory for expansive and experimental
+            ideas?</span><br>
+        <a href="#top">back to top ⮥</a>
+
+        <br>
+        <br>
+
+        <!--APP DESIGN-->
+        <div class="art">
+
+            <div class="image-stack">
+
+                <div style="padding:171.69% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/1026759029?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="Flores - GRDS 255 - App Design Student Work 1"></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/1026759417?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="Flores - GRDS 255 - App Design Student Work 2"></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+                <div style="padding:188.94% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/1026759559?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="Flores - GRDS 255 - App Design Student Work 3"></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+            </div>
+
+            <p>
+                <em>Project: App Design</em><br>
+                GRDS 256 - Interaction Design<br>
+                UTK School of Design<br>
+                <br>
+
+                Description:
+                For this assignment you will create an app from the content of ten linked Wikipedia entries. Everyone
+                will start from the same place: the Wikipedia entry for Interaction Design. From within this entry you
+                will choose a word or phrase which is hyperlinked to another Wikipedia entry, and collect the main
+                column text for that term. From this second term you will choose another hyperlinked term, and so on,
+                for 10 terms. (As an example, I collected the following string: interaction design, Muriel Cooper,
+                SX-70, Mylar, sailboat, paddle, yacht, etc.)
+                <br><br>
+                The link chain you create will guide the user flow in your app design. Starting from a splash page, you
+                will design an experience that takes a user from the start through the end of your chain. Consider user
+                flow, navigation standards, and the constraints of the mobile device in your design.<br><br>
+                Objectives:<br>
+                → Create a working prototype of a mobile app, fore fronting user flow and linked
+                content.<br>
+                → Consider narrative structures as generative structures.<br>
+                → Identify best practices in user navigation.<br>
+                <br>
+                Tools & Skills:<br>
+                Figma, Wireframing, User Research, Persona Mapping, Prototyping, Animation, User Flow
+            </p>
+        </div>
+
+        <!--TYPE SPECIMEN-->
+        <div class="art">
+            <div class="image-stack">
+                <img src="/img/work/williamscoracorinne_328001_22701326_P01_Type Specimen Final JPG.jpg">
+                <img src="/img/work/correiabrandontim_327294_22701291_Type Specimen poster FINAL!.jpg">
+                <img src="/img/work/lawrencerachelalyssa_328298_22701316_Type Specimen FINAL.jpg">
+            </div>
+            <p>
+                <em>Project: Type Specimen Poster</em><br>
+                GRDS 255 - Typography I<br>
+                UTK School of Design<br>
+                <br>
+                Design and produce a type “specimen” poster for a typeface. A type specimen is a printed design that
+                demonstrates the range of a typeface, applied to headlines and text in a variety of sizes. Each
+                variation of the typeface should be labeled on the page. Type specimens have existed for centuries to
+                help designers pick a font for a project. Type specimens today can be wildly flamboyant or classical in
+                their approach.<br><br>
+                Objectives:<br>
+                → Establish and use a simple grid to organize and align elements.<br>
+                → Cluster elements to create different typographic densities.<br>
+                → Express the nature of the typeface through its overall design.<br>
+                → Adjust leading and tracking to create legibility.<br>
+                → Compose hierarchy through: emphasis, contrast, balance, repetition,
+                alignment and flow.
+                <br>
+                <br>
+                Tools & Skills:<br>
+                InDesign, Historical Research, Print Production
+            </p>
+        </div>
+
+        <!--PYOP-->
+        <div class="art">
+            <div class="image-stack">
+
+                <div style="padding:65.03% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/1027117464?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="Flores - GRDS 255 - Interaction Design - Student Work"></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+                <img src="/img/work/hannahPYOP.png">
+                <img src="/img/work/delaneyPYOP.png">
+            </div>
+            <p>
+                <em>Project: PYOP (Propose Your Own Project)</em><br>
+                GRDS 256 - Interaction Design<br>
+                UTK School of Design<br>
+                <br>
+                For your final project, you are tasked with conceptualizing, pitching, and
+                designing a digital project of your choice. This is intentionally open-ended, as
+                to give you the opportunity to apply and synthesize everything you’ve
+                learned and been curious about this semester into an experience or design
+                you’d like to see exist. Be weird! Take some chances!<br><br>
+                Objectives:<br>
+                → Practice ideation and idea generation.<br>
+                → Prepare and deliver a professional pitch presentation.<br>
+                → Integrate research into a comprehensive design system.<br>
+                <br>
+                <br>
+                Tools & Skills:<br>
+                Figma, Wireframing, User Research, Persona Mapping, Prototyping, Animation, User Flow, Pitch and
+                Presentation Design
+            </p>
+        </div>
+
+        <!--ATOMIC DESIGN-->
+        <div class="art">
+            <div class="image-stack">
+                <img src="/img/work/sophia_atomic2.png">
+                <img src="/img/work/sophia_atomic1.png">
+                <img src="/img/work/louisa_atomic1.png">
+                <img src="/img/work/louisa_atomic2.png">
+            </div>
+            <p>
+                <em>Project: Atomic Design</em><br>
+                GRDS 256 - Interaction Design<br>
+                UTK School of Design<br>
+                <br>
+                The Atomic Design framework is a strategy for crafting robust design
+                systems in a methodical, flexible, modular way. You may be asking: what’s a
+                design system? In a nutshell, a design system is a collection of reusable
+                components that can be built together to create any digital product.
+                There are many different ways to approach the creation of a design system.
+                Atomic Design is one of the methodologies for organizing a design system
+                that helps make the life of designers and developers easier and their
+                workflows much more efficient.
+                <br><br>
+                In this project, we will be learning the workflow of creating a design system
+                from the ground up using the Atomic Design method. We will also be
+                identifying and classifying some essential UI elements, and exploring how
+                they can be utilized in deliberate ways in order to define the structure, flow,
+                and look of a digital product.
+                <br><br>
+                Objectives:<br>
+                → Using the Atomic Design framework, create a design system of unique and discrete elements that can be
+                combined into deliverable products.<br>
+                → Identify examples of successful or interesting UI elements.<br>
+                → Explore the process of wireframing.<br>
+                <br>
+                <br>
+                Tools & Skills:<br>
+                Figma, Wireframing, User Research, Persona Mapping, Prototyping, Animation, User Flow, Pitch and
+                Presentation Design
+            </p>
+        </div>
+
+        <!--MUSIC VIDEO-->
+        <div class="art">
+            <div class="image-stack">
+
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/898930330?h=74f11151c5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="Flores - GRDS103 - Project 3 Student Work"></iframe></div>
+
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/898930689?h=1594684e50&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%2Fembed"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+
+            </div>
+            <p>
+                <em>Project: Movement to a Movement</em><br>
+                GRDS 103 - Graphic Design Foundations Studio III<br>
+                UTK School of Design<br>
+                <br>
+                Movement to a Movement is a motion design project in which students choose a song and are assigned an
+                art or design movement (such as Bauhaus, Futurism,
+                Dada, Surrealism, Constructivism, or Minimalism) to reinterpret as a short animated music video. Through
+                research and formal analysis, students identify the visual language, conceptual frameworks, and
+                historical context of their assigned movement and abstract those qualities into motion, typography,
+                color, rhythm, and pacing.
+                <br><br>
+                Rather than focusing on narrative, the project emphasizes sound-driven visual systems and formal
+                experimentation. Students synchronize animation to audio and explore how time, movement, and repetition
+                can function as core design elements. The project introduces industry-standard motion design workflows
+                and positions animation as an extension of graphic design practice.
+                <br><br>
+                Objectives:<br>
+                → Translate historical and theoretical design movements into contemporary motion design work.<br>
+                → Use sound as a structural element to guide timing, rhythm, and motion.<br>
+                → Apply foundational animation principles to communicate mood and concept.<br>
+                → Utilize transitions to guide us to different scenes of your animation.<br>
+                <br>
+                <br>
+                Tools & Skills:<br>
+                Adobe After Effects, Illustrator (asset creation), Audio editing tools, Keyframing and easing,
+                Storyboarding
+            </p>
+        </div>
+
+        <!--ZOO-->
+        <div class="art">
+
+            <div class="image-stack">
+                <img src="/img/work/zoo1.jpg">
+                <img src="/img/work/zoo2.jpg">
+                <img src="/img/work/zoo3.jpg">
+                <img src="/img/work/zoo4.jpg">
+            </div>
+
+            <p>
+                <em>Project: Accessibility Zoo</em><br>
+                GRDS 256 - Interaction Design<br>
+                UTK School of Design<br>
+                <br>
+                Web accessibility is a critical aspect of web design and development,
+                focusing on making websites functional for any given user. This concept is
+                rooted in the belief that everyone, regardless of their physical or cognitive
+                abilities, should have equal access to information and services available on
+                the internet. Accessibility is not just a legal requirement but an ethical
+                imperative. By making accessible websites, designers and developers can
+                reach a broader audience and make the online world a more inclusive
+                space.
+                <br><br>
+                In this project, we will examine what makes a website accessible, and
+                (maybe more importantly), what makes a website inaccessible to certain
+                users. We will learn current accessibility standards, what they mean, and
+                how they can be applied to a design that is empathetic and plans for
+                differences between individuals.
+                <br><br>
+                Objectives:<br>
+                → Use sitemaps to guide website navigation design.<br>
+                → Define user personas through UX research.<br>
+                → Consider accessibility as a core component to a website design.<br>
+                <br>
+                <br>
+                Tools & Skills:<br>
+                Figma, Wireframing, User Research, Persona Mapping, Prototyping, Animation, User Flow, Pitch and
+                Presentation Design
+            </p>
+
+        </div>
+
+        <!--Radio -->
+        <div class="art">
+
+            <div class="image-stack">
+                <img src="/img/work/radio1.jpeg">
+                <img src="/img/work/radio2.jpg">
+                <img src="/img/work/radio3.png">
+            </div>
+
+            <p>
+                <em>Project: Radio as Publication</em><br>
+                GRDS 425 - Transmission//Reception<br>
+                UTK School of Design<br>
+                <br>
+                For your final project, you will develop an hour-long radio broadcast alongside a 16+ page printed zine.
+                This project will help us think about how radio can function as a form of publication, and consider the
+                relationship between sound and print.
+                <br><br>
+                The challenge is to create a meaningful connection between the broadcast and the zine—bridging the gap
+                between audio and visual storytelling.
+                <br><br>
+                Objectives:<br>
+                → Explore radio as a form of publication and understand how sound-based media can function alongside
+                printed matter.<br>
+                → Develop conceptual and formal connections between audio and visual storytelling through parallel
+                broadcast and print artifacts.<br>
+                → Plan, produce, and present long-form content that integrates research, sequencing, and audience
+                experience across multiple media formats.<br>
+                <br>
+                <br>
+                Tools & Skills:<br>
+                Audio recording, editing, and sequencing for broadcast, Print layout and publication design, Systems
+                thinking across time-based and static design formats
+            </p>
+
+        </div>
+
+
+
+    </div>
+
+    <a href="#top">back to top ⮥</a>
 
     <p>This space is currently being updated once a season. <span id="timestamp"></span></p>
 
@@ -420,6 +1106,7 @@
         const formattedDate = lastModified.toLocaleDateString(); // Format the date
         const formattedTime = lastModified.toLocaleTimeString(); // Format the time
         document.getElementById("timestamp").innerHTML = `Last modified on ${formattedDate} at ${formattedTime} EST`;
+        document.getElementById("timestamp2").innerHTML = `As of: ${formattedDate} at ${formattedTime} EST`;
     </script>
 
 
